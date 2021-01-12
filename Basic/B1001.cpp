@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+#define MAXN 65536
+using namespace std;
+
+int main()
+{
+    int n, m = 0;
+    scanf("%d", &n);
+    while (n != 1)
+    {
+        m++;
+        if (n % 2 == 0)
+        {
+            n /= 2;
+        }
+        else
+        {
+            n = (3 * n + 1) / 2;
+        }
+    }
+    printf("%d", m);
+
+    system("pause");
+    return 0;
+}
