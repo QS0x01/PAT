@@ -8,9 +8,7 @@ int num(string s, int d)
     for (int i = 0; i < s.length(); i++)
     {
         if (s[i] - '0' == d)
-        {
             p = p * 10 + d;
-        }
     }
     return p;
 }
@@ -27,4 +25,3 @@ int main()
     system("pause");
     return 0;
 }
-
